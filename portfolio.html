@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Portfolio - Evans Kamau Portfolio</title>
-  <meta name="description" content="Portfolio projects by Evans Kamau - Web Development and Digital Marketing">
-  <meta name="keywords" content="Web Development, React.js, E-commerce, Portfolio Projects">
+  <meta name="description" content="Portfolio projects by Evans Kamau - Graphic Design, WordPress, SEO, and Web Development">
+  <meta name="keywords" content="Graphic Design, WordPress Development, SEO, Web Development, Portfolio Projects">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,13 +27,29 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom Portfolio Grid Styles -->
+  <style>
+    /* Fix masonry layout */
+    .portfolio-item {
+      margin-bottom: 30px !important;
+    }
+
+    .portfolio-content {
+      height: auto !important;
+    }
+
+    .portfolio-content img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Add spacing between items */
+    .isotope-container .col-lg-4 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  </style>
 </head>
 
 <body class="portfolio-page">
@@ -42,8 +58,6 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Evans Kamau</h1>
       </a>
 
@@ -54,23 +68,6 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -88,7 +85,7 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Portfolio</h1>
-              <p class="mb-0">Showcasing my web development projects and technical skills. Each project demonstrates my expertise in modern web technologies and problem-solving abilities.</p>
+              <p class="mb-0">Showcasing my work in graphic design, WordPress development, SEO optimization, and custom website projects. Each project demonstrates creativity, technical expertise, and results-driven solutions.</p>
             </div>
           </div>
         </div>
@@ -112,121 +109,144 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-web">Web Development</li>
-            <li data-filter=".filter-ecommerce">E-commerce</li>
-            <li data-filter=".filter-react">React.js</li>
-            <li data-filter=".filter-upcoming">Upcoming</li>
+            <li data-filter=".filter-graphic-design">Graphic Design</li>
+            <li data-filter=".filter-wordpress">WordPress</li>
+            <li data-filter=".filter-seo">SEO</li>
+            <li data-filter=".filter-website">Website</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-ecommerce filter-react">
+            <!-- ROW 1 - First 3 Graphics -->
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphic-design">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="E-Commerce Land Rental Website">
+                <img src="assets/img/g1.jpeg" class="img-fluid" alt="Brand Identity Design">
                 <div class="portfolio-info">
-                  <h4>Land Rental E-Commerce</h4>
-                  <p>React.js E-commerce Platform</p>
-                  <a href="assets/img/portfolio/portfolio-1.webp" title="Land Rental E-Commerce Website" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Brand Identity Design</h4>
+                  <p>Logo & Visual Identity</p>
+                  <a href="assets/img/g1.jpeg" title="Brand Identity Design" data-gallery="portfolio-gallery-graphic" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphic-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/g2.jpeg" class="img-fluid" alt="Social Media Graphics">
+                <div class="portfolio-info">
+                  <h4>Social Media Campaign</h4>
+                  <p>Graphics & Marketing Materials</p>
+                  <a href="assets/img/g2.jpeg" title="Social Media Graphics" data-gallery="portfolio-gallery-graphic" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphic-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/g3.jpeg" class="img-fluid" alt="Logo Design">
+                <div class="portfolio-info">
+                  <h4>Company Logo Design</h4>
+                  <p>Brand Identity</p>
+                  <a href="assets/img/g3.jpeg" title="Logo Design" data-gallery="portfolio-gallery-graphic" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ROW 2 - Next 3 Graphics -->
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphic-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/g4.jpeg" class="img-fluid" alt="Poster Design">
+                <div class="portfolio-info">
+                  <h4>Event Poster</h4>
+                  <p>Marketing Material</p>
+                  <a href="assets/img/g4.jpeg" title="Poster Design" data-gallery="portfolio-gallery-graphic" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphic-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/g5.jpeg" class="img-fluid" alt="Flyer Design">
+                <div class="portfolio-info">
+                  <h4>Flyer Design</h4>
+                  <p>Promotional Material</p>
+                  <a href="assets/img/g5.jpeg" title="Flyer Design" data-gallery="portfolio-gallery-graphic" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphic-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/g6.jpeg" class="img-fluid" alt="Brochure Design">
+                <div class="portfolio-info">
+                  <h4>Brochure Design</h4>
+                  <p>Marketing Collateral</p>
+                  <a href="assets/img/g6.jpeg" title="Brochure Design" data-gallery="portfolio-gallery-graphic" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ROW 3 - Add more graphics here following the same pattern -->
+
+            <!-- WordPress Project with Embedded Site -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress filter-website">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/1.jpg" class="img-fluid" alt="WordPress Site">
+                <div class="portfolio-info">
+                  <h4>WordPress Business Site</h4>
+                  <p>Custom Theme & Development</p>
+                  <a href="#wordpress-modal-1" data-bs-toggle="modal" class="preview-link"><i class="bi bi-eye"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <!-- WordPress Project 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress filter-website">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="Responsive Business Website">
+                <img src="assets/img/wordpress-2.jpeg" class="img-fluid" alt="WordPress Site 2">
                 <div class="portfolio-info">
-                  <h4>Business Website</h4>
-                  <p>Responsive HTML/CSS/JavaScript</p>
-                  <a href="assets/img/portfolio/portfolio-10.webp" title="Responsive Business Website" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>E-Commerce WordPress</h4>
+                  <p>WooCommerce Integration</p>
+                  <a href="#wordpress-modal-2" data-bs-toggle="modal" class="preview-link"><i class="bi bi-eye"></i></a>
+                  <a href="https://kamaumbugua2025-gymnl.wordpress.com/2025/11/13/find-the-perfect-pool-tables-in-kenya-masterstroke-billiards/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- SEO Project with Embedded Results -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seo">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/seo-1.jpeg" class="img-fluid" alt="SEO Results">
+                <div class="portfolio-info">
+                  <h4>SEO Campaign Results</h4>
+                  <p>Traffic Growth & Rankings</p>
+                  <a href="#seo-modal-1" data-bs-toggle="modal" class="preview-link"><i class="bi bi-eye"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-react">
+            <!-- Gmail Marketing Campaign -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="React.js Task Manager">
+                <img src="assets/img/email-marketing-1.jpeg" class="img-fluid" alt="Email Marketing">
                 <div class="portfolio-info">
-                  <h4>Task Manager App</h4>
-                  <p>React.js with State Management</p>
-                  <a href="assets/img/portfolio/portfolio-7.webp" title="React.js Task Manager" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Email Marketing Campaign</h4>
+                  <p>Newsletter & Automation</p>
+                  <a href="#email-modal-1" data-bs-toggle="modal" class="preview-link"><i class="bi bi-eye"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-upcoming">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="Digital Marketing Dashboard">
-                <div class="portfolio-info">
-                  <h4>Marketing Dashboard</h4>
-                  <p>Digital Marketing Analytics Platform</p>
-                  <a href="assets/img/portfolio/portfolio-4.webp" title="Digital Marketing Dashboard" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-react">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Website">
-                <div class="portfolio-info">
-                  <h4>Personal Portfolio</h4>
-                  <p>Bootstrap & React.js Portfolio</p>
-                  <a href="assets/img/portfolio/portfolio-2.webp" title="Personal Portfolio Website" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="Online Store">
-                <div class="portfolio-info">
-                  <h4>Online Store</h4>
-                  <p>E-commerce with Shopping Cart</p>
-                  <a href="assets/img/portfolio/portfolio-11.webp" title="Online Store" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-upcoming">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="Network Monitoring Tool">
-                <div class="portfolio-info">
-                  <h4>Network Monitor</h4>
-                  <p>Network Administration Dashboard</p>
-                  <a href="assets/img/portfolio/portfolio-8.webp" title="Network Monitoring Tool" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Landing Page">
-                <div class="portfolio-info">
-                  <h4>Marketing Landing Page</h4>
-                  <p>SEO Optimized Landing Page</p>
-                  <a href="assets/img/portfolio/portfolio-5.webp" title="Marketing Landing Page" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-react">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Weather App">
-                <div class="portfolio-info">
-                  <h4>Weather Application</h4>
-                  <p>React.js with API Integration</p>
-                  <a href="assets/img/portfolio/portfolio-3.webp" title="Weather Application" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+            <!-- ADD MORE PROJECTS BELOW THIS LINE -->
+            <!-- Copy any section above and modify the details -->
 
           </div><!-- End Portfolio Container -->
 
@@ -237,6 +257,79 @@
     </section><!-- /Portfolio Section -->
 
   </main>
+
+  <!-- MODALS FOR EMBEDDED CONTENT -->
+
+  <!-- WordPress Modal 1 -->
+  <div class="modal fade" id="wordpress-modal-1" tabindex="-1" aria-labelledby="wordpressModal1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="wordpressModal1">WordPress Business Site</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- PASTE YOUR WORDPRESS EMBED CODE HERE -->
+          <iframe src="https://kamaumbugua2025-gymnl.wordpress.com/2025/11/13/find-the-perfect-pool-tables-in-kenya-masterstroke-billiards/" width="100%" height="600" frameborder="0"></iframe>
+          <!-- Or paste Google Drive embed, video embed, etc. -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WordPress Modal 2 -->
+  <div class="modal fade" id="wordpress-modal-2" tabindex="-1" aria-labelledby="wordpressModal2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="wordpressModal2">E-Commerce WordPress</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- PASTE YOUR WORDPRESS EMBED CODE HERE -->
+          <iframe src="https://kamaumbugua2025-gymnl.wordpress.com/2025/11/13/find-the-perfect-pool-tables-in-kenya-masterstroke-billiards/" width="100%" height="600" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEO Results Modal -->
+  <div class="modal fade" id="seo-modal-1" tabindex="-1" aria-labelledby="seoModal1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="seoModal1">SEO Campaign Results</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- PASTE YOUR SEO DASHBOARD/ANALYTICS EMBED HERE -->
+          <!-- Example: Google Analytics, SEMrush, Ahrefs embed -->
+          <iframe src="https://YOUR-SEO-DASHBOARD.com" width="100%" height="600" frameborder="0"></iframe>
+          <!-- Or paste images/screenshots -->
+          <img src="assets/img/seo-results-full.jpeg" class="img-fluid" alt="SEO Results">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email Marketing Modal -->
+  <div class="modal fade" id="email-modal-1" tabindex="-1" aria-labelledby="emailModal1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="emailModal1">Email Marketing Campaign</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- PASTE YOUR EMAIL MARKETING EMBED HERE -->
+          <!-- Mailchimp, Gmail screenshot, Campaign Monitor, etc. -->
+          <iframe src="https://YOUR-EMAIL-CAMPAIGN.com" width="100%" height="600" frameborder="0"></iframe>
+          <!-- Or show email template images -->
+          <img src="assets/img/email-campaign-1.jpeg" class="img-fluid" alt="Email Campaign">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
@@ -254,10 +347,6 @@
           <span>Copyright</span> <strong class="px-1 sitename">Evans Kamau</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
@@ -284,6 +373,40 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Fix Isotope Masonry Layout -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Wait for Isotope to initialize
+      setTimeout(function() {
+        var elem = document.querySelector('.isotope-container');
+        if (elem && typeof Isotope !== 'undefined') {
+          var iso = new Isotope(elem, {
+            itemSelector: '.portfolio-item',
+            layoutMode: 'masonry',
+            masonry: {
+              columnWidth: '.portfolio-item',
+              gutter: 30
+            }
+          });
+
+          // Reload layout after images load
+          imagesLoaded(elem, function() {
+            iso.layout();
+          });
+
+          // Fix layout on filter click
+          document.querySelectorAll('.portfolio-filters li').forEach(function(filter) {
+            filter.addEventListener('click', function() {
+              setTimeout(function() {
+                iso.layout();
+              }, 100);
+            });
+          });
+        }
+      }, 500);
+    });
+  </script>
 
 </body>
 
